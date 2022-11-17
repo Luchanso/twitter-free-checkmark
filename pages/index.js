@@ -28,9 +28,9 @@ export default function Home() {
                     siteName: "Free Twitter Blue Checkmark",
                     images: [
                         {
-                            url: "https://twitter-free-checkmark.vercel.app/screen.png",
-                            width: 850,
-                            height: 650,
+                            url: "https://twitter-free-checkmark.vercel.app/preview.png",
+                            width: 919,
+                            height: 481,
                             alt: "Figma screenshot",
                         },
                     ],
