@@ -11,10 +11,31 @@ import {
 import Head from "next/head";
 import ImageLogo from "next/image";
 import Script from "next/script";
+import { DefaultSeo } from "next-seo";
 
 export default function Home() {
     return (
         <>
+            <DefaultSeo
+                title="Free Twitter Blue Checkmark"
+                description="Create free twitter blue checkmark for your twitter profile"
+                openGraph={{
+                    type: "website",
+                    title: "Free Twitter Blue Checkmark",
+                    description:
+                        "Create free twitter blue checkmark for your twitter profile",
+                    url: "https://twitter-free-checkmark.vercel.app",
+                    siteName: "Free Twitter Blue Checkmark",
+                    images: [
+                        {
+                            url: "https://twitter-free-checkmark.vercel.app/screen.png",
+                            width: 850,
+                            height: 650,
+                            alt: "Figma screenshot",
+                        },
+                    ],
+                }}
+            />
             <Container
                 maxW="container.lg"
                 // h="100vh"
@@ -24,11 +45,6 @@ export default function Home() {
                 // alignItems="center"
             >
                 <Head>
-                    <title>Free Twitter Blue Checkmark</title>
-                    <meta
-                        name="description"
-                        content="Create free twitter blue checkmark for your twitter profile"
-                    />
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <Script
