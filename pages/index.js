@@ -69,7 +69,7 @@ export default function Home() {
                     flexDir="column"
                 >
                     <Heading
-                        fontSize="80px"
+                        fontSize={["60px", "80px"]}
                         background="linear-gradient(45deg,#f83a3a 10%,#f13dd4 50%,#7000ff 90%)"
                         backgroundClip="text"
                         fill="transparent"
