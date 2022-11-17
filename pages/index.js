@@ -35,6 +35,9 @@ export default function Home() {
                         },
                     ],
                 }}
+                twitter={{
+                    cardType: "summary_large_image",
+                }}
             />
             <Container
                 maxW="container.lg"
@@ -119,9 +122,24 @@ export default function Home() {
                 <Image src="/screen.png" alt="screenshot" mb="16" />
 
                 <Heading as="h2">Instruction</Heading>
-                <Image src="/instructions/step1.png" alt="instruction" my="4" />
-                <Image src="/instructions/step2.png" alt="instruction" my="4" />
-                <Image src="/instructions/step3.png" alt="instruction" my="4" />
+                <Image
+                    loading="lazy"
+                    src="/instructions/step1.png"
+                    alt="instruction"
+                    my="4"
+                />
+                <Image
+                    loading="lazy"
+                    src="/instructions/step2.png"
+                    alt="instruction"
+                    my="4"
+                />
+                <Image
+                    loading="lazy"
+                    src="/instructions/step3.png"
+                    alt="instruction"
+                    my="4"
+                />
                 <Link
                     textAlign="center"
                     target="_blank"
